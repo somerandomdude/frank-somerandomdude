@@ -1,0 +1,25 @@
+#bio_pic {
+  background: url("/wp-content/themes/somerandomdude/images/profile.png?embed=true") no-repeat center center;
+  max-width: 100%;
+  height: 160px;
+  text-indent: -9999px;
+  display: block;
+  margin-bottom: 15px;
+  box-shadow: 0px 0px 8px rgba(18, 7, 6, 0.3); }
+
+aside .widget {
+  width: auto;
+  margin-right: 0; }
+
+@media only screen and (max-width: 767px) {
+  #bio_pic {
+    font-size: 17px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #5d504f;
+    background: none;
+    width: auto;
+    height: auto;
+    text-indent: 0;
+    box-shadow: none; } }
+#sidebar {
+  margin-top: 60px; }

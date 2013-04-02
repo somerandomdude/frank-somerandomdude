@@ -1,0 +1,91 @@
+#page-bottom {
+	border-top: 1px solid $color-dark;
+	box-shadow:0 -1px 1px rgba(5,0,0,.3);
+}
+
+#page-footer {
+	padding-top:0;
+}
+
+#twitter-follow {
+	float:left; /*TODO: this feels incredible hacky...*/
+	margin-top:-60px;
+	padding-bottom:60px;
+	margin-left:0;
+	p { 
+		font: italic #{$font-size-large} #{$typeface-primary};
+		text-shadow:0px -1px 0px rgba(5,0,0,.3); 
+	}
+	a { 
+		margin-left:10px; 
+		&:hover { 
+			color:$color-highlight; 
+		}
+	}
+	small { 
+		display:block; 
+		margin-top:$row-height*2; 
+		font: #{$font-size-x-small} #{$typeface-secondary}; 
+	}
+}
+
+.recommended {
+	dt {
+		font: #{$font-weight-bold} #{$font-size-small} #{$typeface-secondary};
+		text-shadow:0px -1px 0px rgba(5,0,0,.3);
+		margin-bottom:2px;
+	}
+	dd {
+		font-size:$font-size-x-small;
+		color:$color-light;
+		margin-bottom:15px;
+	}
+}
+
+#footer_main_promo {
+	margin-top: $row-height * 2 * -1;
+	box-shadow: 0px 4px 8px rgba(18, 7, 6, 0.3);
+	min-height: 180px;
+	display: block;
+	background-color: $color-accent;
+	text-decoration: none;
+	&:hover { background-color: $color-accent-alt !important;  }
+	.sprite.fork {
+		width:30%;
+		max-width: 131px;
+		height: 150px;
+		background:inline-image('fork.svg') no-repeat center -2px;
+		background-size:contain;
+		float: left;
+		margin-left: 15px;
+	}
+	.content {
+		display: block;
+		float: right;
+		width: 55%;
+		padding-top: $row-height * 2;
+		padding-right: 5%;
+	}
+	.header {
+		font: #{$font-size-large} #{$typeface-secondary};
+		display: block;
+		text-shadow:0px -1px 0px rgba(5,0,0,.3); 
+	}
+	.caption {
+			display: block;
+			font-size: $font-size-x-small;
+			margin-top: $row-height;
+			font-style: italic; 
+	} 
+}
+
+@media only screen and  (max-width: 767px) {
+	#twitter-follow {
+		margin-top:$row-height;
+		a { display:block; margin-left:0; }
+	}
+	
+	#text-10 #footer_main_promo .content {
+		padding-top: $row-height;
+	}
+}

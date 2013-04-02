@@ -1,0 +1,45 @@
+body {
+	border-top:3px solid $color-off-black;
+}
+
+#webbynode_promo {
+	margin-top: $row-height;
+	small {
+		@extend %small-label;
+		display: block;
+		margin-bottom: 2px; 
+	}	 
+}
+
+#webbynode_promo_link {
+	display: block;
+	width: 100px;
+	height: 20px;
+	background:inline-image('webbynode.png') no-repeat;
+	@extend %image-replace;
+}
+
+.post-info {
+	.author {
+		display: none !important;
+	}
+}
+
+.post-group {
+	margin-top:0;
+	margin-bottom:$row-height*4;
+	& ~ .post-group {
+		margin: $row-height*4 auto;
+	}
+}
+
+.metadata  {
+	.tags {
+		display:none;
+	}
+}
+
+/*MOBILE*/		
+@media only screen and  (max-width: 767px) {
+	
+}	

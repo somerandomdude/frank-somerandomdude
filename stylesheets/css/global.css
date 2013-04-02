@@ -1,0 +1,92 @@
+article .metadata .author {
+  display: none !important; }
+
+body {
+  border-top: 3px solid #050000; }
+
+#webbynode_promo {
+  margin-top: 15px; }
+  #webbynode_promo small {
+    font-size: 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: block;
+    margin-bottom: 2px; }
+
+#webbynode_promo_link {
+  display: block;
+  width: 100px;
+  height: 20px;
+  background: url("/wp-content/themes/somerandomdude/images/webbynode.png?embed=true") no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.fss {
+  position: relative; }
+
+/*Temp*/
+.slide-container {
+  position: relative;
+  height: 210px; }
+
+.fss .slide-container {
+  box-shadow: 0px 0px 8px rgba(18, 7, 6, 0.3);
+  line-height: 0; }
+
+.slideshow .captions li {
+  display: none;
+  font-size: 11px !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
+
+.slideshow .captions li.active {
+  display: block; }
+
+/*Temp*/
+.slideshow .slide-a, .slideshow .slide-b {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in;
+  width: 100% !important;
+  background-position-x: center !important; }
+
+.slideshow .slide-a.visible, .slideshow .slide-b.visible {
+  opacity: 1; }
+
+.fss-nav {
+  background: rgba(61, 48, 47, 0.8);
+  display: none;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
+  list-style: none;
+  padding: 10px;
+  margin: 0; }
+
+.fss-nav.active {
+  display: block; }
+
+.fss .fss-nav li {
+  float: left;
+  display: block !important;
+  padding: 0;
+  margin: 0 10px 0 0;
+  background: #ded3d1;
+  color: #3d302f;
+  cursor: pointer;
+  font-weight: 700 !important;
+  font-size: 10px !important;
+  line-height: 20px !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  text-align: center;
+  width: 20px;
+  height: 20px; }
+
+.fss-nav li:last-child {
+  margin-right: 0; }
+
+.fss-nav li.active {
+  background: #fefafa;
+  color: #050000; }
+
+/*MOBILE*/

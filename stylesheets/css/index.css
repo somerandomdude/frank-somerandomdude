@@ -1,0 +1,7 @@
+#content.home .content-header {
+  display: none; }
+#content.home .content.oneup.large header h1:before {
+  font-style: italic;
+  color: #5d504f;
+  margin-right: 10px;
+  content: "Featured Article:"; }

@@ -1,0 +1,232 @@
+#content.page article header {
+  display: none; }
+
+#page_title {
+  font-size: 28px;
+  color: #5d504f; }
+
+#page_title .title {
+  color: #050000;
+  font-style: italic; }
+
+#content.page #info h1, #content.page #other_projects h1 {
+  display: block;
+  padding-top: 0;
+  font-size: 24px; }
+#content.page #info p, #content.page #other_projects p {
+  font-size: 13px; }
+#content.page #info p.large, #content.page #other_projects p.large {
+  font-size: 20px; }
+
+#content.page #other_projects {
+  margin-top: 30px; }
+  #content.page #other_projects #projects_list li {
+    margin-bottom: 0; }
+
+#download_follow {
+  margin: 15px 0; }
+
+#download_follow li {
+  border-top: 2px solid #f0eceb;
+  padding: 15px 0;
+  text-align: center; }
+
+#download_follow small {
+  margin-top: 5px;
+  display: block;
+  font-size: 9px !important;
+  line-height: 12px;
+  font-weight: 700; }
+
+#hero_slideshow {
+  margin-bottom: 30px; }
+
+#projects-nav {
+  margin: 15px 0; }
+
+#content.page #projects-nav dt {
+  color: #5d504f; }
+
+#content.page #projects-nav dt, #content.page #projects-nav dd {
+  margin: 0;
+  font-size: 11px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-right: 20px;
+  float: left; }
+
+#projects-nav dd:last-child {
+  margin-right: 0; }
+
+#content.page #projects-nav dd {
+  background: url("data:image/gif;base64,R0lGODlhCgAeAJEAAP76+mJVVF1QT8zMzCH5BAHoAwMALAAAAAAKAB4AAAIelI+py+0PYxu02ouz3rz7v0kiApRAkJhnaqJkO44FADs=") 0 2px no-repeat;
+  cursor: pointer;
+  padding-left: 15px; }
+
+#content.page #projects-nav dd.active {
+  background-position: 0 -18px;
+  font-weight: 700; }
+
+ul#projects_list {
+  list-style: none; }
+
+#projects_list li {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+#projects_list li:nth-child(4n+1) {
+  margin-left: 0; }
+
+#projects_list li:last-child {
+  float: left; }
+
+#projects_list div {
+  box-shadow: 0px 0px 8px rgba(18, 7, 6, 0.3); }
+
+#projects_list div:hover {
+  box-shadow: 0px 2px 10px rgba(18, 7, 6, 0.5); }
+
+#projects_list .deselected {
+  opacity: 0.5; }
+
+#projects_list p {
+  display: none; }
+
+#projects_list a {
+  display: block;
+  line-height: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  text-decoration: none;
+  width: 100%;
+  height: 120px;
+  background-image: url("/wp-content/images/pages/projects/projects_sprite.png"); }
+
+#projects_list #projects_bitcons {
+  background-position: 0 0; }
+
+#projects_list #projects_sanscons {
+  background-position: 0 -120px; }
+
+#projects_list #projects_photography {
+  background-position: 0 -240px; }
+
+#projects_list #projects_offfranklin {
+  background-position: 0 -360px; }
+
+#projects_list #projects_iconic {
+  background-position: 0 -480px; }
+
+#projects_list #projects_coffeesleeve {
+  background-position: 0 -600px; }
+
+#projects_list #projects_coordy {
+  background-position: 0 -720px; }
+
+#projects_list #cue {
+  background-position: 0 -840px; }
+
+#projects_list #projects_frank {
+  background-position: 0 -960px; }
+
+#projects_list h3 {
+  position: relative;
+  margin: 0;
+  padding: 0; }
+
+#projects_list h3 small {
+  text-indent: 6px;
+  padding: 6px 0;
+  background: rgba(93, 80, 79, 0.84);
+  margin: 0;
+  position: absolute;
+  display: block;
+  bottom: 0;
+  width: 100%;
+  color: #fffefe;
+  font-size: 13px;
+  line-height: 13px; }
+
+#content.page #projects_list div p {
+  font-size: 11px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+#p5554 .slideshow .slide-a, #p5554 .slideshow .slide-b {
+  background-image: url("/wp-content/images/pages/iconic/iconic_sprite.png"); }
+
+#p5554 #project_preview {
+  margin-bottom: 15px; }
+  #p5554 #project_preview a {
+    width: 100%;
+    height: 76px;
+    background: url("/wp-content/images/pages/iconic/icons_sm.png?embed=true") no-repeat;
+    display: block;
+    text-indent: -9999px; }
+
+#p11465 .slideshow .slide-a, #p11465 .slideshow .slide-b {
+  background-image: url("/wp-content/images/pages/cue/cue_sprite.png"); }
+
+#p5734 .slideshow .slide-a, #p5734 .slideshow .slide-b {
+  background-image: url("/wp-content/images/pages/bitcons/bitcons_sprite.png"); }
+
+#p5641 .slideshow .slide-a, #p5641 .slideshow .slide-b {
+  background-image: url("/wp-content/images/pages/sanscons/sanscons_sprite.png"); }
+
+#p6975 .slideshow .slide-a, #p6975 .slideshow .slide-b {
+  background-image: url("/wp-content/images/pages/off_franklin/off_franklin_sprite.jpg"); }
+
+/*Frank*/
+#p4537 #info {
+  margin-top: 30px; }
+
+#p4537 #features h3 {
+  font-size: 24px;
+  margin-top: 60px; }
+
+#p4537 #features h3:first-child {
+  font-size: 24px;
+  margin-top: 30px; }
+
+#p4537 #features .feature p {
+  font-size: 17px; }
+
+#p5215 object {
+  height: 350px; }
+
+@media only screen and (max-width: 767px) {
+  #content.page #projects-nav {
+    display: none; }
+
+  #projects_list div, #projects_list div:hover {
+    box-shadow: none; }
+
+  #projects_list li {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+
+  #projects_list p {
+    display: block;
+    margin-top: 5px;
+    font-size: 17px !important;
+    font-family: Georgia, "Times New Roman", Times, serif !important; }
+
+  #projects_list a {
+    background: none;
+    height: auto; }
+
+  #projects_list h3 small {
+    text-indent: 0;
+    background: none;
+    margin: 0;
+    position: relative;
+    display: block;
+    width: 100%;
+    color: #5d504f;
+    font-size: 20px !important;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
+
+  #project_preview {
+    display: none; }
+
+  #p5215 #coordy_examples_nav, #p5212 #hero_slideshow {
+    display: none; } }

@@ -1,0 +1,79 @@
+#page-header {
+	border-bottom:$border-break;
+	padding-bottom:$row-height;
+	margin:$row-height*2 auto; 
+}
+
+#site-title {
+	@extend %reset;
+	float: left; 
+	a { 
+		@extend %image-replace;
+		display:block;
+		background:inline-image('title.svg') no-repeat left bottom;
+		background-size:contain;
+		width:151px;
+		height:15px; 
+	}
+}
+
+#site-nav {
+	float: right;
+	position: relative;
+}
+	
+/*TODO: Shorten name*/	
+#menu-primary {
+	float: right;
+	list-style: none;
+	@extend %reset;
+	display: block;
+	position: relative;
+	li {
+		@extend %reset;
+		margin-right:$gutter-width;
+		float: left;
+		a {
+			display: block;
+			height: $row-height;
+			font: #{$font-weight-bold} #{$font-size-x-small} #{$typeface-secondary};
+			color:$color-midtone;
+			&:hover {
+				color:$color-off-black;
+			}
+		}
+		&:last-child, &.last { 
+			margin-right: 0; 
+		}
+	}
+	.rss, .twitter {
+		position:fixed;
+		z-index:10000;
+		margin-left:140px;
+		a {
+			width:45px;
+			height:45px;
+			border-radius:22.5px;
+			display:block;
+			@extend %image-replace;
+			@extend %default-shadow;
+		}
+	}
+	.rss {
+		margin-top:-15px;
+		a { 
+			background:$color-accent inline-image('rss.svg') no-repeat center center;	
+			background-size:50%;
+		}
+	}
+	.twitter {
+		margin-top:50px;
+		a { 
+			background:$color-accent inline-image('twitter.svg') no-repeat center center;
+			background-size:60%;
+		}
+	}
+	.rss a:hover, .twitter a:hover {
+		background-color:$color-accent-alt;
+	}
+}

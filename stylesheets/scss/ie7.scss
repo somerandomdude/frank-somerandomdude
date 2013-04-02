@@ -1,0 +1,11 @@
+@import "../../../frank/stylesheets/scss/partials/_variables";
+@import "../../../frank/stylesheets/scss/partials/_mixins";
+@import "partials/_variables";
+
+#content, #sub-header, #content *, #sub-header * {
+	z-index: -1 !important; 
+}
+
+#projects-nav {
+	display: none; 
+}

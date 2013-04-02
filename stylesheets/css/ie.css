@@ -1,0 +1,57 @@
+#projects_list li h3 small {
+  background-color: #5d504f; }
+
+#menu-primary li.rss, #menu-primary li.twitter {
+  display: none !important; }
+
+#follow_list {
+  background: #ea0000; }
+
+#work_pullout {
+  background: #5d504f; }
+
+#categories_pullout {
+  background: #5d504f; }
+
+#text-10 {
+  box-shadow: 0px 0px 8px rgba(18, 7, 6, 0.3);
+  margin-top: -30px; }
+  #text-10 #footer_main_promo {
+    width: 470px;
+    height: 180px;
+    display: block;
+    background-color: #ea0000;
+    text-decoration: none;
+    position: relative; }
+    #text-10 #footer_main_promo .sprite.fork {
+      float: left;
+      margin-left: 15px; }
+    #text-10 #footer_main_promo .content {
+      overflow-y: hidden;
+      display: block;
+      float: left;
+      height: 180px;
+      width: 250px;
+      margin-left: 23px;
+      padding-top: 30px;
+      padding-right: 10px; }
+      #text-10 #footer_main_promo .content .header {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        display: block;
+        font-size: 20px; }
+      #text-10 #footer_main_promo .content .caption {
+        display: block;
+        font-size: 11px;
+        margin-top: 15px;
+        font-style: italic; }
+
+/*PNG replacements*/
+#page_header h1 a {
+  background: url("/wp-content/themes/somerandomdude/images/title.png?embed=true") no-repeat; }
+#page_header nav #menu-primary li.rss a {
+  background: #ea0000 url("/wp-content/themes/somerandomdude/images/rss.png?embed=true") no-repeat center center; }
+#page_header nav #menu-primary li.twitter a {
+  background: #ea0000 url("/wp-content/themes/somerandomdude/images/twitter.png?embed=true") no-repeat center center; }
+
+#text-10 #footer_main_promo .sprite.fork {
+  background: url("/wp-content/themes/somerandomdude/images/fork.png?embed=true") no-repeat; }

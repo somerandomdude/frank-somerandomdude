@@ -1,0 +1,32 @@
+@import "../../../frank/stylesheets/scss/partials/_variables";
+@import "../../../frank/stylesheets/scss/partials/_mixins";
+@import "partials/_variables";
+@import "../../../frank/stylesheets/scss/ie";
+
+#projects_list li h3 small {
+	background-color: $color-midtone; 
+}
+
+#menu-primary li.rss, #menu-primary li.twitter {
+	display: none !important; }
+				
+		
+/*PNG replacements*/
+#page-header {
+	#site-title {
+		a { 
+			background:inline-image('title.png') no-repeat left center;
+		}
+	}
+}
+
+#text-10 {
+
+	#footer_main_promo {
+
+		.sprite.fork {
+
+			background:inline-image('fork.png') no-repeat;
+		}
+	}
+}

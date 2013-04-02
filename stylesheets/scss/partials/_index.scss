@@ -1,0 +1,21 @@
+/*TODO: This doesn't need to be this specific*/
+.post-group.oneup.large {
+	margin-bottom:$row-height*4;
+	.title:before {
+		content: 'Featured Article: ';
+		font-style: italic;
+	}
+	.post {
+		p {
+			font-style: italic;
+			font-size: $font-size-xxx-large; 
+		} 
+	}
+}
+
+/*MOBILE*/
+@media only screen and  (max-width: 767px) {
+	.post-group.oneup.large .post p {
+		font-size: $font-size-x-large; 
+	}
+}

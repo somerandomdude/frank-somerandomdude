@@ -1,0 +1,56 @@
+/*
+Theme Name:     Frank for Some Random Dude
+Theme URI:      http://somerandomdude.com/work/frank
+Description:    Child theme for the Frank theme 
+Author:         P.J. Onori
+Author URI:     http://somerandomdude.com/hello/
+Template:       frank
+Version:        0.1.0
+*/
+@import url("../../../frank/stylesheets/css/reset.css");
+@import url("../../../frank/stylesheets/css/grid.css");
+@import url("../../../frank/stylesheets/css/global.css");
+@import url("../../../frank/stylesheets/css/forms.css");
+@import url("../../../frank/stylesheets/css/widgets.css");
+@import url("../../../frank/stylesheets/css/sprites.css");
+@import url("../../../frank/stylesheets/css/transitions.css");
+/*@import url("../../../frank/stylesheets/css/header.css");*/
+@import url("../../../frank/stylesheets/css/index.css");
+@import url("../../../frank/stylesheets/css/single.css");
+@import url("../../../frank/stylesheets/css/page.css");
+@import url("../../../frank/stylesheets/css/archive.css");
+@import url("../../../frank/stylesheets/css/fourohfour.css");
+@import url("../../../frank/stylesheets/css/sidebar.css");
+@import url("../../../frank/stylesheets/css/comments.css");
+@import url("../../../frank/stylesheets/css/footer.css");
+@import url("../../../frank/stylesheets/css/colorbox.css");
+@import url("../../../frank/stylesheets/css/hacks.css");
+
+
+@import url("reset.css");
+@import url("grid.css");
+@import url("global.css");
+@import url("forms.css");
+@import url("widgets.css");
+@import url("sprites.css");
+@import url("transitions.css");
+@import url("header.css");
+@import url("index.css");
+@import url("single.css");
+@import url("archive.css");
+@import url("fourohfour.css");
+@import url("sidebar.css");
+@import url("comments.css");
+@import url("footer.css");
+@import url("pages.css");
+@import url("colorbox.css");
+@import url("hacks.css");
+@import url("custom.css");
+@import url("mobile.css");
+@import url("print.css");
+
+
+@import url("../../../frank/stylesheets/css/mobile.css");
+@import url("../../../frank/stylesheets/css/print.css");
+
+

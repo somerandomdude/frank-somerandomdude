@@ -1,0 +1,11 @@
+/* TODO: Break out heirarchy */
+#content.single article section ul {
+  list-style: none;
+  font-family: Georgia, "Times New Roman", Times, serif; }
+  #content.single article section ul li {
+    padding-left: 10px;
+    margin-bottom: 15px; }
+#content.single article section img {
+  height: auto; }
+#content.single article #excerpt {
+  border-bottom: 2px solid #f0eceb; }
