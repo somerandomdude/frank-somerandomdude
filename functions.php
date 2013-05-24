@@ -6,10 +6,40 @@ require_once('admin/srd-theme-options.php');
 if (!is_admin()) {  
 	add_action('init', 'frank_enqueue_scripts');
 	add_action('init', 'frank_enqueue_styles');  
-}  
+}
+
+add_filter('content_save_pre', 'frank_add_unique_p_ids');
 
 function frank_init() {
 	wp_deregister_script( 'l10n' );
+}
+
+function frank_add_unique_p_ids($content){
+	$content = apply_filters('the_content', $content);
+	/*
+	return preg_replace('/<p([^>]+)?>/', '<p$1 name="'.generateRandomString().'">', $content);
+	*/
+	//$content = preg_replace('<p(?:\s+(?!name=)\w+="[^"]*")*\s*/>', '<p $1 name="'.generateRandomString().'">', $content);
+
+	do {
+		/*
+	    $content = preg_replace('/<p([^>]+)?>/', '<p$1 name="'.generateRandomString().'">', $content, 1, $count);
+	    */
+	    $content = preg_replace('@<p(?:(?!name=).)*?>@', '<p name="'.generateRandomString().'">', $content, 1, $count);
+	    //http://stackoverflow.com/questions/13281443/regex-find-elements-with-name-attribute-but-not-id
+	    //http://stackoverflow.com/questions/3472772/need-regex-for-all-html-input-tags-which-lack-a-specific-attribute
+	} while ($count);
+
+	return $content;
+}
+
+function generateRandomString($length = 5) {
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyz';
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, strlen($characters) - 1)];
+    }
+    return $randomString;
 }
 
 function frank_theme_options() {
@@ -20,7 +50,7 @@ function frank_enqueue_scripts() {
 	
 	global $wp_scripts;
 	
-	wp_register_script('somerandomdude', (get_stylesheet_directory_uri().'/js/somerandomdude.js'), false, '1.0', true);
+	wp_register_script('somerandomdude', (get_stylesheet_directory_uri().'/javascripts/somerandomdude.js'), false, '1.0', true);
 	wp_enqueue_script('somerandomdude');
 	
 	$frank_general = get_option( '_frank_options' );
