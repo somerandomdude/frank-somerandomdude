@@ -3,12 +3,42 @@
 #add_action('wp_enqueue_scripts', 'frank_enqueue_scripts');
 
 require_once('admin/srd-theme-options.php');
-if (!is_admin()) {  
+if (!is_admin()) {
 	add_action('init', 'frank_enqueue_scripts');
-	add_action('init', 'frank_enqueue_styles');  
+	add_action('init', 'frank_enqueue_styles');
 }
 
 add_filter('content_save_pre', 'frank_add_unique_p_ids');
+
+
+// http://technosailor.com/2012/02/08/tutorial-using-wordpress-ajax-api/
+add_action( 'wp_ajax_get_inline_comments', array( $this, 'frank_get_inline_comments' ) );
+add_action ('comment_post', 'add_meta_settings', 1);
+
+
+
+function frank_get_inline_comments()
+{
+    global $wpdb;
+    $post_id = (int) $_POST['post_id'];
+    $post_block_id = (int) $_POST['post_block_id'];
+
+    // get comments
+    // construct them into formatted HTML
+
+    // spit them out for AJAX to pull down
+    echo $comments;
+
+    exit;
+}
+
+
+function frank_add_comment_meta_settings($comment_id) {
+	add_comment_meta($comment_id, 'comment_paragraph_id', $_POST['comment_id'], true);
+}
+
+
+
 
 function frank_init() {
 	wp_deregister_script( 'l10n' );

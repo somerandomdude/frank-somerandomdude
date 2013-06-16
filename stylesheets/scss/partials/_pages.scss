@@ -4,7 +4,7 @@
 	}
 	#sidebar {
 		margin-top:$row-height*6;
-	} 
+	}
 }
 
 #page_title {
@@ -13,7 +13,7 @@
 	.title {
 		color: $color-off-black;
 		font-size: inherit;
-		font-style: italic; 
+		font-style: italic;
 	}
 }
 
@@ -23,12 +23,12 @@
 		padding-top: 0;
 		font-size: $font-size-x-large; }
 	p { font-size: $font-size-small; }
-	p.large { font-size: $font-size-large; } 
+	p.large { font-size: $font-size-large; }
 }
 
 #content.page #other_projects {
 	margin-top: $row-height * 2;
-	#projects_list li { margin-bottom: 0; } 
+	#projects_list li { margin-bottom: 0; }
 }
 
 #download_follow { margin: 15px 0; }
@@ -46,41 +46,40 @@
 	line-height: 12px;
 	font-weight: $font-weight-bold;
 }
-	
+
 #hero_slideshow {
 	margin-bottom:$row-height*2;
 }
 
 #projects-nav {
-	margin: 15px 0; 
+	margin: 15px 0;
 }
 
 #projects-nav dt {
-	color: $color-midtone; 
+	color: $color-midtone;
 }
 
-#projects-nav dt, 
+#projects-nav dt,
 #projects-nav dd {
 	margin: 0;
 	@extend %small-label;
 	margin-right: 20px;
-	float: left; 
+	float: left;
 }
 
 #projects-nav dd:last-child {
-	margin-right: 0; 
+	margin-right: 0;
 }
 
 #content.page #projects-nav dd {
-	
 	background: $checkbox-sprite 0 2px no-repeat;
 	cursor: pointer;
-	padding-left: 15px; 
+	padding-left: 15px;
 }
 
 #content.page #projects-nav dd.active {
 	background-position: 0 -18px;
-	font-weight: $font-weight-bold; 
+	font-weight: $font-weight-bold;
 }
 
 
@@ -124,44 +123,44 @@
 	text-decoration: none;
 	width:100%;
 	height: 120px;
-	background-image: url("/wp-content/images/pages/projects/projects_sprite.png"); 
+	background-image: url("/wp-content/images/pages/projects/projects_sprite.png");
 	}
 
 
 #projects_list {
 	#projects_bitcons {
-		background-position: 0 0; 
+		background-position: 0 0;
 	}
 	#projects_sanscons {
-		background-position-y: -120px; 
+		background-position-y: -120px;
 	}
 	#projects_photography {
-		background-position-y: -240px; 
+		background-position-y: -240px;
 	}
 	#projects_offfranklin {
-		background-position-y: -360px; 
+		background-position-y: -360px;
 	}
 	#projects_iconic {
-		background-position-y: -480px; 
+		background-position-y: -480px;
 	}
 	#projects_iconic {
-		background-position-y: -480px; 
+		background-position-y: -480px;
 	}
 	#projects_coffeesleeve {
-		background-position-y: -600px; 
+		background-position-y: -600px;
 	}
 	#projects_coordy {
-		background-position-y: -720px; 
+		background-position-y: -720px;
 	}
 	#cue {
-		background-position-y: -840px; 
+		background-position-y: -840px;
 	}
 	#projects_frank {
-		background-position-y: -960px; 
+		background-position-y: -960px;
 	}
 	h3 {
 		position: relative;
-		@extend %reset; 
+		@extend %reset;
 		small {
 			text-indent:6px;
 			padding:6px 0;
@@ -170,7 +169,7 @@
 			position: absolute;
 			display: block;
 			bottom: 0;
-			width:100%; 
+			width:100%;
 			color: $color-highlight;
 			font-size: 13px;
 			line-height: 13px;
@@ -182,11 +181,8 @@
 #content.page #projects_list div p {
 	font: #{$typeface-secondary} #{$font-size-x-small};
 }
-	
 #p5554 .slideshow .slide-a, #p5554 .slideshow .slide-b {
-	background-image: url("/wp-content/images/pages/iconic/iconic_sprite.png"); }	
-	
-	
+	background-image: url("/wp-content/images/pages/iconic/iconic_sprite.png"); }
 
 #p5554 #project_preview {
 	margin-bottom:$row-height;
@@ -199,22 +195,22 @@
 	}
 }
 
-#p11465 .slideshow .slide-a, 
+#p11465 .slideshow .slide-a,
 #p11465 .slideshow .slide-b {
 	background-image: url("/wp-content/images/pages/cue/cue_sprite.png"); }
 
-#p5734 .slideshow .slide-a, 
+#p5734 .slideshow .slide-a,
 #p5734 .slideshow .slide-b {
 	background-image: url("/wp-content/images/pages/bitcons/bitcons_sprite.png"); }
 
-#p5641 .slideshow .slide-a, 
+#p5641 .slideshow .slide-a,
 #p5641 .slideshow .slide-b {
 	background-image: url("/wp-content/images/pages/sanscons/sanscons_sprite.png"); }
 
-#p6975 .slideshow .slide-a, 
+#p6975 .slideshow .slide-a,
 #p6975 .slideshow .slide-b {
 	background-image: url("/wp-content/images/pages/off_franklin/off_franklin_sprite.jpg"); }
-	
+
 /*Frank*/
 #p4537 #info {
 	margin-top:$row-height*2;
@@ -237,34 +233,33 @@
 #p5215 object {
 	height:350px;
 }
-	
-	
+
 @media only screen and  (max-width: 767px) {
-	
+
 	#content.page #projects-nav {
 		display:none;
 	}
-	
+
 	#projects_list div, #projects_list div:hover {
 		box-shadow:none;
 	}
-	
+
 	#projects_list li {
 		margin-top: $row-height*2;
 		margin-bottom: $row-height*2;
 	}
-	
+
 	#projects_list p {
 		display: block;
 		margin-top:5px;
 		font:$font-size-medium $typeface-primary !important; 
 	}
-	
+
 	#projects_list a {
 		background:none;
 		height:auto;
 	}
-	
+
 	#projects_list h3 small {
 		text-indent:0;
 		background: none;
@@ -275,13 +270,13 @@
 		color:$color-midtone;
 		font: #{$typeface-secondary} #{$font-size-large} !important;
 	}
-	
+
 	#project_preview {
 		display:none;
 	}
-	
+
 	#p5215 #coordy_examples_nav, #p5212 #hero_slideshow {
 		display:none;
 	}
-	
-}	
+
+}

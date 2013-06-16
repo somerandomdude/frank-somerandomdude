@@ -1,19 +1,19 @@
 #page-header {
 	border-bottom:$border-break;
 	padding-bottom:$row-height;
-	margin:$row-height*2 auto; 
+	margin:$row-height*2 auto;
 }
 
 #site-title {
 	@extend %reset;
-	float: left; 
-	a { 
+	float: left;
+	a {
 		@extend %image-replace;
 		display:block;
 		background:inline-image('title.svg') no-repeat left bottom;
 		background-size:contain;
 		width:151px;
-		height:15px; 
+		height:15px;
 	}
 }
 
@@ -21,7 +21,6 @@
 	float: right;
 	position: relative;
 }
-	
 /*TODO: Shorten name - use WP menu classes & change RSS/Twitter to more specifically-named classes */	
 #menu-primary {
 	float: right;
@@ -42,8 +41,8 @@
 				color:$color-off-black;
 			}
 		}
-		&:last-child, &.last { 
-			margin-right: 0; 
+		&:last-child, &.last {
+			margin-right: 0;
 		}
 	}
 	.rss, .twitter {
@@ -61,14 +60,14 @@
 	}
 	.rss {
 		margin-top:-15px;
-		a { 
-			background:$color-accent inline-image('rss.svg') no-repeat center center;	
+		a {
+			background:$color-accent inline-image('rss.svg') no-repeat center center;
 			background-size:50%;
 		}
 	}
 	.twitter {
 		margin-top:50px;
-		a { 
+		a {
 			background:$color-accent inline-image('twitter.svg') no-repeat center center;
 			background-size:60%;
 		}

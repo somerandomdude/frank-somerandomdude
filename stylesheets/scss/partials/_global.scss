@@ -7,8 +7,8 @@ body {
 	small {
 		@extend %small-label;
 		display: block;
-		margin-bottom: 2px; 
-	}	 
+		margin-bottom: 2px;
+	}
 }
 
 #webbynode_promo_link {
@@ -39,7 +39,6 @@ body {
 	}
 }
 
-/*MOBILE*/		
+/*MOBILE*/
 @media only screen and  (max-width: 767px) {
-	
-}	
+}

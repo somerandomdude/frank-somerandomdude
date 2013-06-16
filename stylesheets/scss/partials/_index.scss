@@ -8,14 +8,14 @@
 	.post {
 		p {
 			font-style: italic;
-			font-size: $font-size-xxx-large; 
-		} 
+			font-size: $font-size-xxx-large;
+		}
 	}
 }
 
 /*MOBILE*/
 @media only screen and  (max-width: 767px) {
 	.post-group.oneup.large .post p {
-		font-size: $font-size-x-large; 
+		font-size: $font-size-x-large;
 	}
 }

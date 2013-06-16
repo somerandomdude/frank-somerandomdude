@@ -12,20 +12,20 @@
 	margin-top:-60px;
 	padding-bottom:60px;
 	margin-left:0;
-	p { 
+	p {
 		font: italic #{$font-size-large} #{$typeface-primary};
-		text-shadow:0px -1px 0px rgba(5,0,0,.3); 
+		text-shadow:0px -1px 0px rgba(5,0,0,.3);
 	}
-	a { 
-		margin-left:10px; 
-		&:hover { 
-			color:$color-highlight; 
+	a {
+		margin-left:10px;
+		&:hover {
+			color:$color-highlight;
 		}
 	}
-	small { 
-		display:block; 
-		margin-top:$row-height*2; 
-		font: #{$font-size-x-small} #{$typeface-secondary}; 
+	small {
+		display:block;
+		margin-top:$row-height*2;
+		font: #{$font-size-x-small} #{$typeface-secondary};
 	}
 }
 
@@ -69,14 +69,14 @@
 	.header {
 		font: #{$font-size-large} #{$typeface-secondary};
 		display: block;
-		text-shadow:0px -1px 0px rgba(5,0,0,.3); 
+		text-shadow:0px -1px 0px rgba(5,0,0,.3);
 	}
 	.caption {
 			display: block;
 			font-size: $font-size-x-small;
 			margin-top: $row-height;
-			font-style: italic; 
-	} 
+			font-style: italic;
+	}
 }
 
 @media only screen and  (max-width: 767px) {
@@ -84,7 +84,7 @@
 		margin-top:$row-height;
 		a { display:block; margin-left:0; }
 	}
-	
+
 	#text-10 #footer_main_promo .content {
 		padding-top: $row-height;
 	}

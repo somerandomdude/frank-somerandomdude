@@ -1,12 +1,13 @@
 /*!
 Theme Name:     Frank for Some Random Dude
 Theme URI:      http://somerandomdude.com/work/frank
-Description:    Child theme for the Frank theme 
+Description:    Child theme for the Frank theme
 Author:         P.J. Onori
 Author URI:     http://somerandomdude.com/hello/
 Template:       frank
-Version:        0.9.2
+Version:        0.9.4
 */
+/*
 @import "../../../frank/stylesheets/scss/partials/variables";
 @import "../../../frank/stylesheets/scss/partials/mixins";
 @import "../../../frank/stylesheets/scss/partials/extensions";
@@ -34,6 +35,11 @@ Version:        0.9.2
 @import "../../../frank/stylesheets/scss/partials/sidebar";
 @import "../../../frank/stylesheets/scss/partials/comments";
 @import "../../../frank/stylesheets/scss/partials/footer";
+*/
+
+@import "../../../frank/stylesheets/scss/style";
+
+@import "partials/variables";
 
 @import "partials/global";
 @import "partials/transitions";
@@ -45,4 +51,3 @@ Version:        0.9.2
 @import "partials/pages";
 @import "partials/lightbox";
 @import "partials/slideshow";
-@import "partials/inline-comments";

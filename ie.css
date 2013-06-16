@@ -6,13 +6,13 @@ img {
 .chromeframe {
   background: #f0eceb;
   color: #050000;
-  font: 700 13px Sans-Serif;
+  font: 700 1.8rem Sans-Serif;
   padding: 5px 15px;
   text-align: center;
 }
 
 label {
-  font: 700 13px Sans-Serif;
+  font: 700 1.8rem Sans-Serif;
 }
 
 #top_bar {
@@ -20,7 +20,7 @@ label {
 }
 
 #content.single {
-  padding-bottom: 45px;
+  padding-bottom: 4.5rem;
 }
 
 #sub-header .widget-4, #sub-header .widget-7 {
@@ -84,7 +84,7 @@ label {
   text-align: right;
 }
 #respond #comment-form-info input[type=text] {
-  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
 }
 #respond textarea {
   height: 137px;

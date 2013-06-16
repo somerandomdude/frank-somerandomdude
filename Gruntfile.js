@@ -256,7 +256,7 @@ module.exports = function(grunt) {
     * Grunt tasks which build a clean theme for deployment
     */
     grunt.registerTask('dist', ['clean:dist', 'copy:dist', 'compress:dist', 'clean:dist']);
-    grunt.registerTask('opt', ['copy:opt', 'svgo', 'imagemin', 'webp:optPNG', 'webp:optJPG', 'uglify:dist', 'sass:dev', 'csso:restructure']);
+    grunt.registerTask('opt', ['copy:opt', 'svgo', 'imagemin', 'webp:optPNG', 'webp:optJPG', /*'uglify:dist',*/ 'sass:dev', 'csso:restructure']);
     grunt.registerTask('docs', ['contributors', 'markdown']);
 
 };
