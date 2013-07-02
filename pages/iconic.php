@@ -30,54 +30,58 @@ Template Name: Iconic Page Template
 
 <h2 id="page_title"><span class='title'>Iconic</span> is an open source icon set consisting of 171 marks in raster, vector and font formats.</h2>
 
-<div class="row">
+<section class="row">
 	<div class="span4 column-centered">
 		<a class='button download alt' href='https://github.com/downloads/somerandomdude/Iconic/iconic.zip'>Download Iconic</a><small class='license'>Or <a href='https://github.com/somerandomdude/Iconic'>fork it on Github</a>.</small>
+		<a href="#">Preview the icon set</a>
 	</div>
-</div>
+</section>
 
-<section id='info'>
-<h1>An open source icon set that&#8217;s a lot more than just icons</h1>
-<p name="ug3ck">Iconic aims to be the most forward-thinking icon set around based on its support of forward facing display/deployment methods. Icons should not just be clear and attractive, they should be easy and flexible to work with.</p>
-<div id='features' class='row'>
-<div class='four columns'>
+<section id='info' class="row">
+<div class="span12">
+<p>Iconic is a lot more than just icons. It aims to be the most forward-thinking icon set around based on its support of forward facing display/deployment methods. Icons should not just be clear and attractive, they should be easy and flexible to work with.</p>
+</div>
+</section>
+<section id="features" class="row">
+		<div class="span8 column-centered">
+			<div class="row">
+			<div class='span6'>
 <h3>Minimal, stylized design</h3>
-<p name="n21o6">Iconic is intended to be a simple yet unique in form. Alternatives for several marks have been added for greater choice in style.</p>
+<p>Iconic is intended to be a simple yet unique in form. Alternatives for several marks have been added for greater choice in style.</p>
 <h3>All the formats you need</h3>
-<p name="b3461">Iconic comes in <strong>PNG, SVG, SWC, OFT/TTF/EOT and  Omnigraffle stencil formats</strong> as well as the tools used  to generate them.</p>
+<p>Iconic comes in <strong>PNG, SVG, SWC, OFT/TTF/EOT and  Omnigraffle stencil formats</strong> as well as the tools used  to generate them.</p>
 </div>
-<div class='four columns'>
+<div class='span6'>
 <h3>High size flexibility</h3>
-<p name="1wx8c">High legibility over a large scale range is a big priority for Iconic. Nearly all the icons will work from 8 pixels to infinity (and beyond).</p>
+<p>High legibility over a large scale range is a big priority for Iconic. Nearly all the icons will work from 8 pixels to infinity (and beyond).</p>
 <h3>A full generator suite</h3>
-<p name="0g445">Iconic comes with JSX and Python scripts to allow you to build your own PNG, SVG and font files however you would like.</p>
+<p>Iconic comes with JSX and Python scripts to allow you to build your own PNG, SVG and font files however you would like.</p>
 </div>
-<div class='four columns'>
-<div id='project_preview'>
-<h3>Preview the icon set</h3>
-<p name="7j0rr"><a href='/wp-content/images/pages/iconic/icons_preview.png' rel='simplebox'>Click to preview the icons.</a>
-</div>
+<div class='span12'>
 <h3>Open source &amp; free</h3>
 <p name="hl7kx"><a href='https://github.com/somerandomdude/Iconic'>Iconic is available on GitHub</a>. The icons licensed as <a href="http://creativecommons.org/licenses/by-sa/3.0/us/">Creative Commons Share Alike 3.0</a> and all generator scripts are licensed as GPL.</p>
 </div>
+	</div>
 </div>
+
 </section>
+
 <section id="other_projects">
 <h1>Other projects</h1>
 <ul id='projects_list' class="row">
-<li class='four columns design'>
+<li class='span4 design'>
 <div>
 <h3><a href='/work/cue' id="cue"><small>Cue</small></a></h3>
 <p name="s70uw"> Cue is a public domain gestural icon system which focuses on legibility and symbolic representation.</p>
 </div>
 </li>
-<li class='four columns design'>
+<li class='span4 design'>
 <div>
 <h3><a href="/work/bitcons/" id="projects_bitcons"><small>Bitcons</small></a></h3>
 <p name="65zbc">Bitcons is a pixel icon set available in various colors/sizes and completely free to use.</p>
 </div>
 </li>
-<li class='four columns design'>
+<li class='span4 design'>
 <div>
 <h3><a href="/work/sanscons/" id="projects_sanscons"><small>Sanscons</small></a></h3>
 <p name="0c8yk">Sanscons is a CSS-friendly version of Bitcons — allowing you to set custom backgrounds on your icons.</p>
@@ -86,6 +90,18 @@ Template Name: Iconic Page Template
 </ul>
 </section>
 <style>
+#page_title, #info {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+#info {
+	font-size: 1.2em;
+}
+
+#features {
+	font-size:.8em;
+}
 .post-title {
 	display: none;
 }
