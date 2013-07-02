@@ -1,11 +1,13 @@
-#page-header {
+.page-header {
 	border-bottom:$border-break;
 	padding-bottom:$row-height;
 	margin:$row-height*2 auto;
 }
 
-#site-title {
+.site-title {
 	@extend %reset;
+	@extend .column;
+	@extend .span3;
 	float: left;
 	a {
 		@extend %image-replace;
@@ -17,12 +19,17 @@
 	}
 }
 
-#site-nav {
-	float: right;
+.site-nav {
+	@extend .column;
+	@extend .span3;
+	float:right;
+	border:0;
 	position: relative;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 /*TODO: Shorten name - use WP menu classes & change RSS/Twitter to more specifically-named classes */	
-#menu-primary {
+.menu-primary {
 	float: right;
 	list-style: none;
 	@extend %reset;
