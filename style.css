@@ -18,7 +18,7 @@ License:				GPL 3.0
 License URI:		http://www.gnu.org/copyleft/gpl.html
 Tags: 					brown, red, white, fixed-width, sticky-post, custom-menu
 */
-body, .metadata, .metadata li, .wp-caption img, .menu-item, .sub-menu, .comments-list .comment, .site-title, .menu-primary, .menu-primary li, #projects_list a, #projects_list h3, #flb-overlay, #flb-container, #flb-container a, #flb-content #flb-close img, #flb-image {
+body, .metadata, .metadata li, .wp-caption img, .menu-item, .sub-menu, .comments-list, .comments-list .comment, .site-title, .menu-primary, .menu-primary li, #projects_list a, #projects_list h3, #flb-overlay, #flb-container, #flb-container a, #flb-content #flb-close img, #flb-image {
   margin: 0;
   padding: 0;
 }
@@ -48,15 +48,11 @@ blockquote, pre, .bypostauthor {
   font: 1.8rem Sans-Serif;
 }
 
-.page-bottom {
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
-}
-
 table, .alignleft, .alignright, .aligncenter, .wp-caption, .single .post-content h1, .single .post-content h2 {
   margin: 1.5rem 0;
 }
 
-.no_comments, .comments_closed, .comments-list .children .comment {
+.no-comments, .comments-closed, .comments-list .children .comment {
   margin: 3rem 0;
 }
 
@@ -71,6 +67,10 @@ table, .alignleft, .alignright, .aligncenter, .wp-caption, .single .post-content
 *:before,
 *:after {
   box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
 }
 
 /*
@@ -433,27 +433,27 @@ img {
     height: auto;
   }
 }
-.row {
+.row, #comment-form {
   width: 100%;
   margin: 0 auto;
   max-width: 98rem;
 }
 
-.row:before, .row:after {
+.row:before, #comment-form:before, .row:after, #comment-form:after {
   content: " ";
   display: table;
 }
 
-.row:after {
+.row:after, #comment-form:after {
   clear: both;
 }
 
-.row .row:before, .row .row:after {
+.row .row:before, #comment-form .row:before, .row #comment-form:before, #comment-form #comment-form:before, .row .row:after, #comment-form .row:after, .row #comment-form:after, #comment-form #comment-form:after {
   content: " ";
   display: table;
 }
 
-.row .row:after {
+.row .row:after, #comment-form .row:after, .row #comment-form:after, #comment-form #comment-form:after {
   clear: both;
 }
 
@@ -475,7 +475,7 @@ img {
 }
 
 @media only screen and (max-width: 768px) {
-  .column, .type-post:not(.post-large) .post-content, .type-post:not(.post-large) .post-info, #comment-form-logged-in-as, #comment-form-info, #comment-form-content, .comment-content, .comment-info, #comment-form-allowed-tags, .site-title, .site-nav, .column-full, .pagination, .site-title-description, .site-banner, .site-nav, .post-content, .post-title, .post-info, .row [class*="span"], .span1, .span2, .type-post:not(.post-large) .post-info, #comment-form-logged-in-as, #comment-form-info, .comment-info, .span3, .site-title, .site-nav, .span4, .span5, .span6, .span7, .span8, .type-post:not(.post-large) .post-content, #comment-form-content, .comment-content, #comment-form-allowed-tags, .span9, .span10, .span11, .span12 {
+  .column, .type-post:not(.post-large) .post-content, .type-post:not(.post-large) .post-info, #comment-form-logged-in-as, #comment-form-info, .form-submit, #comment-form-content, .comment-content, .comment-info, #comment-form-allowed-tags, .site-title, .site-nav, .column-full, .pagination, .site-title-description, .site-banner, .site-nav, .post-content, .post-title, .post-info, .single .post-excerpt p, .comments-header, .no-comments, .comments-closed, .comments-list, #respond, .row [class*="span"], #comment-form [class*="span"], .span1, .span2, .type-post:not(.post-large) .post-info, #comment-form-logged-in-as, #comment-form-info, .comment-info, .span3, .site-title, .site-nav, .span4, .span5, .span6, .span7, .span8, .type-post:not(.post-large) .post-content, .form-submit, #comment-form-content, .comment-content, #comment-form-allowed-tags, .span9, .span10, .span11, .span12 {
     width: 100%;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -483,24 +483,24 @@ img {
 }
 @media only screen and (min-width: 768px) {
   /* Grid HTML Classes */
-  .row .row {
+  .row .row, #comment-form .row, .row #comment-form, #comment-form #comment-form {
     width: auto;
     margin: 0 -2rem;
     max-width: none;
   }
 
-  .column, .type-post:not(.post-large) .post-content, .type-post:not(.post-large) .post-info, #comment-form-logged-in-as, #comment-form-info, #comment-form-content, .comment-content, .comment-info, #comment-form-allowed-tags, .site-title, .site-nav, .row [class*="span"], .column-full, .pagination, .site-title-description, .site-banner, .post-content, .post-title, .post-info {
+  .column, .type-post:not(.post-large) .post-content, .type-post:not(.post-large) .post-info, #comment-form-logged-in-as, #comment-form-info, .form-submit, #comment-form-content, .comment-content, .comment-info, #comment-form-allowed-tags, .site-title, .site-nav, .row [class*="span"], #comment-form [class*="span"], .column-full, .pagination, .site-title-description, .site-banner, .post-content, .post-title, .post-info, .single .post-excerpt p, .comments-header, .no-comments, .comments-closed, .comments-list, #respond {
     position: relative;
     padding-left: 2rem;
     padding-right: 2rem;
     float: left;
   }
 
-  .column-full, .pagination, .site-title-description, .site-banner, .site-nav, .post-content, .post-title, .post-info {
+  .column-full, .pagination, .site-title-description, .site-banner, .site-nav, .post-content, .post-title, .post-info, .single .post-excerpt p, .comments-header, .no-comments, .comments-closed, .comments-list, #respond {
     width: 100%;
   }
 
-  .push1, .push2, .type-post:not(.post-large) .post-content, .comment-content, #comment-form-allowed-tags, .push3, #respond #submit, .push4, .push5, .push6, .push7, .push8, .push9, .push10, .push11 {
+  .push1, .push2, .type-post:not(.post-large) .post-content, .form-submit, .comment-content, #comment-form-allowed-tags, .push3, .push4, .push5, .push6, .push7, .push8, .push9, .push10, .push11 {
     position: relative;
     right: auto;
   }
@@ -538,7 +538,7 @@ img {
     width: 58.33333%;
   }
 
-  .span8, .type-post:not(.post-large) .post-content, #comment-form-content, .comment-content, #comment-form-allowed-tags {
+  .span8, .type-post:not(.post-large) .post-content, .form-submit, #comment-form-content, .comment-content, #comment-form-allowed-tags {
     width: 66.66667%;
   }
 
@@ -566,7 +566,7 @@ img {
     right: 8.33333%;
   }
 
-  .push2, .type-post:not(.post-large) .post-content, .comment-content, #comment-form-allowed-tags {
+  .push2, .type-post:not(.post-large) .post-content, .form-submit, .comment-content, #comment-form-allowed-tags {
     left: 16.66667%;
   }
 
@@ -574,7 +574,7 @@ img {
     right: 16.66667%;
   }
 
-  .push3, #respond #submit {
+  .push3 {
     left: 25%;
   }
 
@@ -783,6 +783,11 @@ dd {
 .content {
   margin: 0 0 6rem 0;
   position: relative;
+}
+
+.page-title {
+  font-size: 3.4rem;
+  font-weight: 300;
 }
 
 /*Search - not implemented*/
@@ -1102,7 +1107,7 @@ pre {
 }
 
 .bypostauthor {
-  border-color: #5d504f;
+  border-color: #d9d3d2;
 }
 
 .widget {
@@ -1120,15 +1125,15 @@ pre {
 
 input[type=text],
 textarea {
-  border: 2px solid #5d504f;
-  font: 1.8rem Sans-Serif;
+  border: 2px solid #f0eceb;
+  font: 1.3rem Sans-Serif;
   color: #5d504f;
   padding: 3px 4px;
   border-radius: 2px;
 }
 input[type=text]:focus,
 textarea:focus {
-  border: 2px solid #050000;
+  border: 2px solid #9e8e8d;
 }
 
 #comment-form-content textarea {
@@ -1303,7 +1308,6 @@ button, .button, input[type=submit] {
   font-size: 2.1rem;
 }
 .single .post-title {
-  color: #3d302f;
   font-weight: 300;
 }
 .single .post-excerpt {
@@ -1311,14 +1315,15 @@ button, .button, input[type=submit] {
   color: #5d504f;
 }
 .single .post-excerpt p {
-  padding-top: 0;
+  margin-bottom: 0;
   font: italic 2.8rem/1.55 Georgia, serif;
 }
 .single .pagination {
   margin-top: 3rem;
 }
 .single .content-main {
-  margin-top: 3rem auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   padding-bottom: 1.5rem;
 }
 .single .post-content {
@@ -1410,9 +1415,14 @@ button, .button, input[type=submit] {
   margin-bottom: 3rem;
 }
 
-.no_comments, .comments_closed {
+.no-comments, .comments-closed {
   font: italic 3.8rem/1.25 Georgia, serif;
   color: #5d504f;
+}
+
+.form-submit {
+  clear: both;
+  margin-top: 1.5rem;
 }
 
 .comment-content {
@@ -1426,10 +1436,13 @@ button, .button, input[type=submit] {
   font: 700 1.3rem Sans-Serif;
 }
 
+.html-explanation {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+}
+
 .comments-list {
   list-style: none;
-  padding-left: 0;
-  margin-left: 0;
 }
 .comments-list .comment.parent {
   /*TODO: Figure out a visual style for this*/
@@ -1467,16 +1480,12 @@ button, .button, input[type=submit] {
   margin-bottom: 1.5rem;
   text-align: right;
 }
+#respond input[type=text]:last-child {
+  margin-bottom: 0;
+}
 #respond textarea {
   margin: 0;
   height: 118px;
-}
-#respond textarea:focus {
-  height: 37.5rem;
-}
-#respond #submit {
-  margin-top: 1.5rem;
-  /*TODO: Extend .push-three?*/
 }
 #respond .loggedin {
   font-style: italic;

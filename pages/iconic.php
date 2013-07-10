@@ -22,17 +22,14 @@ Template Name: Iconic Page Template
 
 
 
-
-
-
 <!-- CUSTOM CODE STARTS HERE -->
 
 
 <h2 id="page_title"><span class='title'>Iconic</span> is an open source icon set consisting of 171 marks in raster, vector and font formats.</h2>
 
 <section class="row">
-	<div class="span4 column-centered">
-		<a class='button download alt' href='https://github.com/downloads/somerandomdude/Iconic/iconic.zip'>Download Iconic</a><small class='license'>Or <a href='https://github.com/somerandomdude/Iconic'>fork it on Github</a>.</small>
+	<div class="span6 column-centered">
+		<a class='button download alt' href='https://github.com/downloads/somerandomdude/Iconic/iconic.zip'>Download Iconic</a> <small>Or <a href='https://github.com/somerandomdude/Iconic'>fork it on Github</a>.</small>
 		<a href="#">Preview the icon set</a>
 	</div>
 </section>
@@ -67,21 +64,27 @@ Template Name: Iconic Page Template
 </section>
 
 <section id="other_projects">
-<h1>Other projects</h1>
+<h3>Other projects</h3>
 <ul id='projects_list' class="row">
-<li class='span4 design'>
+<li class='span3 design'>
 <div>
 <h3><a href='/work/cue' id="cue"><small>Cue</small></a></h3>
 <p name="s70uw"> Cue is a public domain gestural icon system which focuses on legibility and symbolic representation.</p>
 </div>
 </li>
-<li class='span4 design'>
+<li class='span3 design'>
 <div>
 <h3><a href="/work/bitcons/" id="projects_bitcons"><small>Bitcons</small></a></h3>
 <p name="65zbc">Bitcons is a pixel icon set available in various colors/sizes and completely free to use.</p>
 </div>
 </li>
-<li class='span4 design'>
+<li class='span3 design'>
+<div>
+<h3><a href="/work/sanscons/" id="projects_sanscons"><small>Sanscons</small></a></h3>
+<p name="0c8yk">Sanscons is a CSS-friendly version of Bitcons — allowing you to set custom backgrounds on your icons.</p>
+</div>
+</li>
+<li class='span3 design'>
 <div>
 <h3><a href="/work/sanscons/" id="projects_sanscons"><small>Sanscons</small></a></h3>
 <p name="0c8yk">Sanscons is a CSS-friendly version of Bitcons — allowing you to set custom backgrounds on your icons.</p>
